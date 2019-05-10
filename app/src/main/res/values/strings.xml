@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Vigenère Cipher</string>
+    <string name="title_app_name">Vigenère Cipher Tool</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_enc">ENCRYPT</string>
+    <string name="tab_dec">DECRYPT</string>
+    <string name="text_hint">Enter text here</string>
+    <string name="encrypt">Encrypt</string>
+    <string name="copy">Copy</string>
+    <string name="paste">Paste</string>
+    <string name="key">Key</string>
+    <string name="options">Advanced Options</string>
+    <string name="decrypt">Decrypt</string>
+
+    <string name="include_space">Skip letters not in the alphabet</string>
+    <string name="restart_count">Restart counting after each new line</string>
+    <string name="custom_alphabet">Custom alphabets</string>
+    <string name="ok">OK</string>
+    <string name="default_alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="alphabet">Alphabet</string>
+    <string name="cancel">Cancel</string>
+    <string name="copy_success">Copied to clipboard</string>
+    <string name="paste_fail">Primary clip does not contain text data</string>
+    <string name="text_hint_output">Output will be displyed here</string>
+
+</resources>

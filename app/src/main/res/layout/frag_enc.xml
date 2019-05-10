@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/input_e"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/text_hint"
+        android:background="@drawable/edittext_top_round"
+        android:textColorHint="@color/colorBackgroundDarkHint"
+        android:inputType="textMultiLine"
+        android:selectAllOnFocus="true"
+        app:layout_constraintBottom_toTopOf="@+id/copy_in_e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/output_e"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittext_top_round"
+        android:ems="10"
+        android:hint="@string/text_hint_output"
+        android:inputType="textMultiLine"
+        android:selectAllOnFocus="true"
+        android:textColorHint="@color/colorBackgroundDarkHint"
+        app:layout_constraintBottom_toTopOf="@+id/copy_out_e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/options_e" />
+
+    <Button
+        android:id="@+id/encrypt"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/button_dark"
+        android:text="@string/encrypt"
+        android:textColor="@color/colorPrimaryContrast"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/options_e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/key_e" />
+
+    <Button
+        android:id="@+id/copy_in_e"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/button_light_rounded_left"
+        android:text="@string/copy"
+        android:textColor="@color/colorPrimaryContrast"
+        app:layout_constraintBottom_toTopOf="@+id/key_e"
+        app:layout_constraintEnd_toStartOf="@+id/paste_in_e"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_e" />
+
+    <Button
+        android:id="@+id/paste_in_e"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_light_rounded_right"
+        android:text="@string/paste"
+        android:textColor="@color/colorPrimaryContrast"
+        app:layout_constraintBottom_toBottomOf="@+id/copy_in_e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/copy_in_e"
+        app:layout_constraintTop_toTopOf="@+id/copy_in_e" />
+
+    <Button
+        android:id="@+id/copy_out_e"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_light_rounded_left"
+        android:text="@string/copy"
+        android:textColor="@color/colorPrimaryContrast"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/paste_out_e"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output_e" />
+
+    <Button
+        android:id="@+id/paste_out_e"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_light_rounded_right"
+        android:text="@string/paste"
+        android:textColor="@color/colorPrimaryContrast"
+        app:layout_constraintBottom_toBottomOf="@+id/copy_out_e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/copy_out_e"
+        app:layout_constraintTop_toTopOf="@+id/copy_out_e" />
+
+    <EditText
+        android:id="@+id/key_e"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:hint="@string/key"
+        android:inputType="textNoSuggestions|textCapCharacters"
+        android:singleLine="true"
+        android:textColorHint="@color/colorBackgroundDarkHint"
+        app:layout_constraintBottom_toTopOf="@+id/encrypt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/copy_in_e" />
+
+    <Button
+        android:id="@+id/options_e"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/button_light"
+        android:text="@string/options"
+        android:textColor="@color/colorPrimaryContrast"
+        app:layout_constraintBottom_toTopOf="@+id/output_e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/encrypt" />
+</android.support.constraint.ConstraintLayout>
